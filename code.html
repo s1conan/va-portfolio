@@ -1,0 +1,428 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "brutal-black": "#000000",
+                "brutal-white": "#FFFFFF",
+                "brutal-yellow": "#FFD700",
+                "brutal-gray": "#1A1A1A"
+              },
+              fontFamily: {
+                "display": ['"Space Grotesk"', 'sans-serif'],
+                "mono": ['"JetBrains Mono"', 'monospace'],
+              },
+              borderWidth: {
+                '3': '3px',
+                '4': '4px',
+              },
+              spacing: {
+                "lg": "48px",
+                "md": "24px",
+                "xs": "8px",
+                "margin-desktop": "64px",
+                "margin-mobile": "16px",
+                "sm": "16px",
+                "base": "4px",
+                "gutter": "24px",
+                "xl": "80px",
+                "2xl": "120px"
+              },
+              boxShadow: {
+                'brutal': '8px 8px 0px 0px rgba(0,0,0,1)',
+                'brutal-hover': '4px 4px 0px 0px rgba(0,0,0,1)',
+                'brutal-yellow': '8px 8px 0px 0px #FFD700',
+              }
+            },
+          },
+        }
+      }catch(_e){}</script>
+<style>
+    body {
+        background-color: #FFFFFF;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+    }
+    .brutal-border {
+        border: 4px solid #000000;
+    }
+    .brutal-border-b {
+        border-bottom: 4px solid #000000;
+    }
+    .brutal-border-r {
+        border-right: 4px solid #000000;
+    }
+    .brutal-border-t {
+        border-top: 4px solid #000000;
+    }
+    .brutal-border-l {
+        border-left: 4px solid #000000;
+    }
+    /* Hide scrollbar for horizontal scroll */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>
+</head><body class="text-brutal-black font-mono antialiased min-h-screen flex flex-col bg-brutal-white selection:bg-brutal-yellow selection:text-brutal-black">
+<!-- TopNavBar -->
+<header class="w-full bg-brutal-white brutal-border-b sticky top-0 z-40" id="main-header">
+<div class="flex flex-wrap md:flex-nowrap justify-between items-stretch w-full mx-auto">
+<div class="font-display font-bold text-2xl md:text-3xl p-md brutal-border-b md:brutal-border-b-0 md:brutal-border-r w-full md:w-auto uppercase tracking-tighter flex items-center bg-brutal-yellow">
+                DEV_ARCHITECT
+            </div>
+<nav class="hidden md:flex items-stretch w-full">
+<a class="flex-1 flex items-center justify-center text-brutal-black font-mono font-bold text-sm uppercase brutal-border-r hover:bg-brutal-black hover:text-brutal-white transition-colors" href="#projects">[ PROJECTS ]</a>
+<a class="flex-1 flex items-center justify-center text-brutal-black font-mono font-bold text-sm uppercase brutal-border-r hover:bg-brutal-black hover:text-brutal-white transition-colors" href="#skills">[ SKILLS ]</a>
+<a class="flex-1 flex items-center justify-center text-brutal-black font-mono font-bold text-sm uppercase hover:bg-brutal-black hover:text-brutal-white transition-colors" href="#contact">[ CONTACT ]</a>
+</nav>
+<div class="hidden md:flex items-stretch">
+<a class="flex items-center justify-center px-lg py-md bg-brutal-black text-brutal-white font-display font-bold text-lg uppercase hover:bg-brutal-yellow hover:text-brutal-black transition-colors whitespace-nowrap brutal-border-l" href="#contact">
+                    INITIALIZE SECURE LINK
+                </a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Open menu" class="md:hidden text-brutal-black p-md brutal-border-l bg-brutal-white hover:bg-brutal-yellow">
+<span class="material-symbols-outlined text-3xl font-bold">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow w-full mx-auto">
+<!-- Hero Section -->
+<section class="brutal-border-b bg-brutal-white relative overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-12 brutal-border-b min-h-[70vh]">
+<div class="col-span-1 md:col-span-8 p-margin-mobile md:p-margin-desktop md:brutal-border-r flex flex-col justify-center relative z-10">
+<div class="absolute top-md left-md font-mono font-bold text-xs uppercase bg-brutal-black text-brutal-yellow px-2 py-1">SYS.STATUS: ONLINE</div>
+<h1 class="font-display font-black text-6xl md:text-[8rem] leading-[0.85] tracking-tighter uppercase mb-md mt-lg break-words">
+                    HARD-<br><span class="text-brutal-yellow" style="-webkit-text-stroke: 2px black;">CODED</span><br>RELIABILITY.
+                </h1>
+<p class="font-mono font-bold text-xl md:text-2xl mb-lg max-w-3xl uppercase leading-tight bg-brutal-black text-brutal-white p-md inline-block">
+                    Industrial-grade engineering for startups. Unbreakable architecture. Maximum conversion vectors.
+                </p>
+<div class="flex flex-wrap gap-md mt-auto">
+<a class="inline-flex items-center justify-center px-lg py-md bg-brutal-yellow text-brutal-black brutal-border font-display font-bold text-xl uppercase hover:bg-brutal-black hover:text-brutal-yellow shadow-brutal hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all" href="#contact">
+                        EXECUTE CONSULTATION
+                    </a>
+<a class="inline-flex items-center justify-center px-lg py-md bg-brutal-white text-brutal-black brutal-border font-display font-bold text-xl uppercase hover:bg-brutal-black hover:text-brutal-white shadow-brutal hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all" href="#projects">
+                        ACCESS LOGS
+                    </a>
+</div>
+</div>
+<div class="col-span-1 md:col-span-4 bg-brutal-black relative flex flex-col p-md">
+<div class="flex-1 brutal-border border-brutal-gray relative overflow-hidden group">
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjMDAwIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMOCA4Wk04IDBMMCA4WiIgc3Ryb2tlPSIjMWExYTFhIiBzdHJva2Utd2lkdGg9IjEiPjwvcGF0aD4KPC9zdmc+')] opacity-50"></div>
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-brutal-yellow font-display font-black text-[12rem] opacity-20 group-hover:scale-110 transition-transform duration-500">//</div>
+</div>
+<div class="mt-md brutal-border border-brutal-gray p-sm">
+<p class="text-brutal-yellow font-mono text-xs uppercase leading-tight">
+            &gt; INITIALIZING BUILD SEQUENCE<br>
+            &gt; COMPILING ASSETS [OK]<br>
+            &gt; DEPLOYING ARCHITECTURE [OK]<br>
+            &gt; SYSTEM READY.
+        </p>
+</div>
+</div>
+</div>
+<div class="w-full overflow-hidden bg-brutal-yellow brutal-border-b py-2 whitespace-nowrap flex">
+<div class="animate-[marquee_20s_linear_infinite] font-mono font-bold text-lg uppercase flex gap-8 items-center">
+<span class="">NO FLUFF.</span>
+<span class="">///</span>
+<span class="">JUST CODE.</span>
+<span class="">///</span>
+<span class="">HIGH PERFORMANCE.</span>
+<span class="">///</span>
+<span class="">ZERO DOWNTIME.</span>
+<span class="">///</span>
+<span class="">NO FLUFF.</span>
+<span class="">///</span>
+<span class="">JUST CODE.</span>
+<span class="">///</span>
+<span class="">HIGH PERFORMANCE.</span>
+<span class="">///</span>
+<span class="">ZERO DOWNTIME.</span>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="brutal-border-b bg-brutal-gray relative" id="projects">
+<div class="flex flex-col md:flex-row items-stretch brutal-border-b border-brutal-black">
+<div class="p-md md:p-lg bg-brutal-yellow brutal-border-r border-brutal-black md:w-1/4 flex flex-col justify-between">
+<div>
+<span class="font-mono font-bold text-brutal-black text-xl block mb-sm">01 // TARGETS</span>
+<h2 class="font-display font-black text-5xl md:text-6xl text-brutal-black uppercase tracking-tighter leading-none break-words">DEPLOYED<br>ASSETS</h2>
+</div>
+<div class="hidden md:block font-mono text-sm uppercase mt-xl">
+<span class="material-symbols-outlined text-4xl block mb-2">arrow_forward</span>
+            Scroll Horizontal
+        </div>
+</div>
+<div class="w-full md:w-3/4 overflow-x-auto no-scrollbar flex bg-brutal-black relative" style="scroll-snap-type: x mandatory;">
+<!-- Project 1 -->
+<article class="flex-none w-[90%] md:w-[60%] border-r-4 border-brutal-black relative group" onclick="openProjectModal('project1')" style="scroll-snap-align: start;">
+<div class="aspect-[4/3] w-full relative overflow-hidden bg-brutal-white p-sm brutal-border-b border-brutal-black">
+<div class="absolute top-0 left-0 bg-brutal-yellow text-brutal-black font-mono font-bold text-xs px-2 py-1 z-10 brutal-border-r brutal-border-b border-brutal-black">ID: ALPHA_01</div>
+<img alt="FinTech Dashboard" class="w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 transition-all duration-300 border-2 border-brutal-black" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK3PsTBb4a3i7iyP_Gwj6LtWNvxtTW7CHKshgyP1uRW3M84IIkeL4EnTjhZNgTuZtZgPooUyTMXplJ9Lx5Ry6sB3LsEOscybtfFWWRLcqHtytfqs3MN-GUCLp9HMDLad8EMZ5kTT6MEDSo9fTCrV-UvjJPkjVoFmqSwKP5mTK2LrYycCB2CTGjfeWrh32_Q9yGtMni1ytF_MEv1YRf_yqocaENS8vL_z_lXFi2ruaCb0FBHgpDMEUNRKrlqKh57xrG3cn-rqqj4A0">
+</div>
+<div class="p-md bg-brutal-white min-h-[200px] flex flex-col justify-between">
+<div>
+<h3 class="font-display font-black text-3xl text-brutal-black uppercase mb-xs leading-none">FinTech Data Node</h3>
+<p class="font-mono text-sm text-brutal-black uppercase bg-brutal-yellow inline-block px-1 mb-md">High-Velocity Analytics</p>
+</div>
+<div class="flex justify-between items-end">
+<div class="flex flex-col gap-1">
+<span class="font-mono font-bold text-xs bg-brutal-black text-brutal-white px-2 py-1 uppercase">NEXT.JS</span>
+<span class="font-mono font-bold text-xs bg-brutal-black text-brutal-white px-2 py-1 uppercase">TYPESCRIPT</span>
+</div>
+<span class="material-symbols-outlined text-4xl text-brutal-black group-hover:text-brutal-yellow transition-colors">arrow_circle_right</span>
+</div>
+</div>
+</article>
+<!-- Project 2 -->
+<article class="flex-none w-[90%] md:w-[60%] border-r-4 border-brutal-black relative group" onclick="openProjectModal('project2')" style="scroll-snap-align: start;">
+<div class="aspect-[4/3] w-full relative overflow-hidden bg-brutal-white p-sm brutal-border-b border-brutal-black">
+<div class="absolute top-0 left-0 bg-brutal-yellow text-brutal-black font-mono font-bold text-xs px-2 py-1 z-10 brutal-border-r brutal-border-b border-brutal-black">ID: BETA_02</div>
+<img alt="E-Commerce Architecture" class="w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 transition-all duration-300 border-2 border-brutal-black" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYl0ZJKDE4Uw_RYp2wuQyVMMWo-zpYfXBpoG2XE__k8wpBx5IqigPcgJ-wKqpLOJ3ivpcHsNhkTIC0sX9a3mZwk_vAgjk11Nfingwbm3kulcGEllwqbwcq3nSzTGcOvHhqR-2FhTqe0vp3JNWPLgwXewDTM63JeSAoNuMJ29sBj46S4_uNYFcVTsiMMFBG6gCKUTrs2HBMLwS_nN4L5LK8LbW-GS8DWuKK2-HAc7B1dUzoKqfpWSCC-nWW6dwSMqPDCftt4INXKac">
+</div>
+<div class="p-md bg-brutal-white min-h-[200px] flex flex-col justify-between">
+<div>
+<h3 class="font-display font-black text-3xl text-brutal-black uppercase mb-xs leading-none">Commerce Engine</h3>
+<p class="font-mono text-sm text-brutal-black uppercase bg-brutal-yellow inline-block px-1 mb-md">Headless Conversion Vector</p>
+</div>
+<div class="flex justify-between items-end">
+<div class="flex flex-col gap-1">
+<span class="font-mono font-bold text-xs bg-brutal-black text-brutal-white px-2 py-1 uppercase">VUE.JS</span>
+<span class="font-mono font-bold text-xs bg-brutal-black text-brutal-white px-2 py-1 uppercase">NODE.JS</span>
+</div>
+<span class="material-symbols-outlined text-4xl text-brutal-black group-hover:text-brutal-yellow transition-colors">arrow_circle_right</span>
+</div>
+</div>
+</article>
+<!-- Empty padding block for scroll end -->
+<div class="flex-none w-[10%] bg-brutal-black"></div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="brutal-border-b bg-brutal-white" id="skills">
+<div class="grid grid-cols-1 md:grid-cols-12">
+<div class="col-span-1 md:col-span-3 p-md md:p-lg brutal-border-b md:brutal-border-b-0 md:brutal-border-r bg-brutal-black text-brutal-white flex flex-col justify-start">
+<span class="font-mono font-bold text-brutal-yellow text-xl block mb-sm">02 // CAPABILITIES</span>
+<h2 class="font-display font-black text-5xl md:text-6xl uppercase tracking-tighter leading-none break-words">TECH<br>STACK</h2>
+</div>
+<div class="col-span-1 md:col-span-9 grid grid-cols-1 md:grid-cols-3">
+<!-- Frontend -->
+<div class="p-lg brutal-border-b md:brutal-border-b-0 md:brutal-border-r hover:bg-brutal-yellow transition-colors group">
+<h3 class="font-display font-black text-3xl uppercase tracking-tighter mb-lg flex items-center justify-between">
+    FRONTEND
+    <span class="material-symbols-outlined text-4xl group-hover:rotate-90 transition-transform">terminal</span>
+</h3>
+<ul class="space-y-4 font-mono font-bold uppercase text-lg">
+<li class="border-b-4 border-brutal-black pb-2 flex justify-between">REACT / NEXT.JS <span class="text-brutal-black opacity-50">[++]</span></li>
+<li class="border-b-4 border-brutal-black pb-2 flex justify-between">VUE.JS / NUXT <span class="text-brutal-black opacity-50">[++]</span></li>
+<li class="border-b-4 border-brutal-black pb-2 flex justify-between">TYPESCRIPT <span class="text-brutal-black opacity-50">[++]</span></li>
+<li class="flex justify-between">TAILWIND CSS <span class="text-brutal-black opacity-50">[++]</span></li>
+</ul>
+</div>
+<!-- Backend -->
+<div class="p-lg brutal-border-b md:brutal-border-b-0 md:brutal-border-r bg-brutal-black text-brutal-white hover:bg-brutal-white hover:text-brutal-black transition-colors group">
+<h3 class="font-display font-black text-3xl uppercase tracking-tighter mb-lg flex items-center justify-between">
+    BACKEND
+    <span class="material-symbols-outlined text-4xl group-hover:-rotate-90 transition-transform">dns</span>
+</h3>
+<ul class="space-y-4 font-mono font-bold uppercase text-lg">
+<li class="border-b-4 border-current pb-2 flex justify-between">NODE.JS / EXPRESS <span class="opacity-50">[++]</span></li>
+<li class="border-b-4 border-current pb-2 flex justify-between">POSTGRESQL <span class="opacity-50">[++]</span></li>
+<li class="border-b-4 border-current pb-2 flex justify-between">GRAPHQL / REST <span class="opacity-50">[++]</span></li>
+<li class="flex justify-between">REDIS <span class="opacity-50">[++]</span></li>
+</ul>
+</div>
+<!-- Tools -->
+<div class="p-lg hover:bg-brutal-yellow transition-colors group">
+<h3 class="font-display font-black text-3xl uppercase tracking-tighter mb-lg flex items-center justify-between">
+    DEVOPS
+    <span class="material-symbols-outlined text-4xl group-hover:rotate-180 transition-transform">settings_applications</span>
+</h3>
+<ul class="space-y-4 font-mono font-bold uppercase text-lg">
+<li class="border-b-4 border-brutal-black pb-2 flex justify-between">AWS / VERCEL <span class="text-brutal-black opacity-50">[++]</span></li>
+<li class="border-b-4 border-brutal-black pb-2 flex justify-between">DOCKER <span class="text-brutal-black opacity-50">[++]</span></li>
+<li class="border-b-4 border-brutal-black pb-2 flex justify-between">CI/CD PIPELINES <span class="text-brutal-black opacity-50">[++]</span></li>
+<li class="flex justify-between">GIT / ACTIONS <span class="text-brutal-black opacity-50">[++]</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section><!-- Certifications Section -->
+<section class="brutal-border-b bg-brutal-white" id="certifications">
+<div class="grid grid-cols-1 md:grid-cols-12">
+<div class="col-span-1 md:col-span-3 p-md md:p-lg brutal-border-b md:brutal-border-b-0 md:brutal-border-r bg-brutal-black text-brutal-white flex flex-col justify-start">
+<span class="font-mono font-bold text-brutal-yellow text-xl block mb-sm">03 // CREDENTIALS</span>
+<h2 class="font-display font-black text-5xl md:text-6xl uppercase tracking-tighter leading-none break-words">VERIFIED<br>EXPERTISE</h2>
+</div>
+<div class="col-span-1 md:col-span-9 grid grid-cols-1 md:grid-cols-2">
+<!-- Cert 1 -->
+<div class="p-lg brutal-border-b md:brutal-border-b-0 md:brutal-border-r hover:bg-brutal-yellow transition-colors group">
+<div class="aspect-[4/3] w-full mb-md overflow-hidden brutal-border bg-brutal-black">
+<img alt="Senior Systems Architect Certification" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5IaPNNtdCvb8a1HXV4fWseb2K-KBrcWYZgHBItpeROFEza6h-ImLFwTANgDrUsHdpLMEus5te0JNgSMDTOwf-CiPIPwxwtd1TxyW_JEuu63I-90TosmbtO_CWUF4hKuOoSsxxZTq4iq5-tlGFDZ8hwmqg1TltfMnbRFEUeGLnjI4HAzX3FfTaIns-frfN72vlYkxqBWaPxzUCcgzVKhMAhzFh0ynBh6lwIcUYoRgreyf37m7ItouzwIbfy7580AfhRLxGPnwDUjg">
+</div>
+<h3 class="font-display font-black text-2xl uppercase mb-2">Senior Systems Architect</h3>
+<p class="font-mono font-bold text-sm uppercase opacity-70">Issued by: Brutalist Engineering Guild</p>
+</div>
+<!-- Cert 2 -->
+<div class="p-lg hover:bg-brutal-yellow transition-colors group md:brutal-border-l">
+<div class="aspect-[4/3] w-full mb-md overflow-hidden brutal-border bg-brutal-black">
+<img alt="Cloud Infrastructure Specialist Certification" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHgWRbdyUZQ5-MivTCw9_SxALiqIogaQmqkT5LMd4g1XAONC9Uh-Zpv7dJJyWTJgpJr7yy-sAb8ZiNDQL5aT0w75g3IcaH3v5Zquxq7gk8TcsjzvJUnG2yRi58qlr-uLwO_1sEO1B20Q2Ikj08M_WnA89ylnFFk9ozsFGKe7Iho3M0Y3cbbwWJHFMmc4jhqHfWZm5qY1AVnJ0LqdtUK-1ZVaQZD_GQ_0qDWlD4Xu7bH4M7BnEd-2RapxCTVrgcgEy4Syyz4WnyepE">
+</div>
+<h3 class="font-display font-black text-2xl uppercase mb-2">Cloud Infrastructure Specialist</h3>
+<p class="font-mono font-bold text-sm uppercase opacity-70">Issued by: Cloud Architect Alliance</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Proposal Request Form -->
+<section class="brutal-border-b bg-brutal-white" id="contact">
+<div class="grid grid-cols-1 md:grid-cols-12">
+<div class="col-span-1 md:col-span-3 p-md md:p-lg brutal-border-b md:brutal-border-b-0 md:brutal-border-r bg-brutal-yellow text-brutal-black flex flex-col justify-start">
+<span class="font-mono font-bold text-brutal-black text-xl block mb-sm">04 // INQUIRY</span>
+<h2 class="font-display font-black text-5xl md:text-6xl uppercase tracking-tighter leading-none break-words">REQUEST<br>PROPOSAL</h2>
+<div class="mt-xl space-y-4 font-mono font-bold uppercase text-sm">
+<p class="brutal-border-b border-brutal-black pb-2">ARCHITECT@DEV.VOID</p>
+<a class="block hover:translate-x-2 transition-transform" href="#">[ LINKEDIN ]</a>
+<a class="block hover:translate-x-2 transition-transform" href="#">[ GITHUB ]</a>
+</div>
+</div>
+<div class="col-span-1 md:col-span-9 p-lg">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="flex flex-col gap-2">
+<label class="font-mono font-bold uppercase text-xs">NAME_ID</label>
+<input class="brutal-border p-4 font-mono focus:bg-brutal-yellow focus:outline-none transition-colors" placeholder="ENTER NAME" type="text">
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-mono font-bold uppercase text-xs">EMAIL_ADDR</label>
+<input class="brutal-border p-4 font-mono focus:bg-brutal-yellow focus:outline-none transition-colors" placeholder="ENTER EMAIL" type="email">
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-mono font-bold uppercase text-xs">COMPANY_ORG</label>
+<input class="brutal-border p-4 font-mono focus:bg-brutal-yellow focus:outline-none transition-colors" placeholder="ENTER COMPANY" type="text">
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-mono font-bold uppercase text-xs">PROJECT_TYPE</label>
+<select class="brutal-border p-4 font-mono focus:bg-brutal-yellow focus:outline-none transition-colors appearance-none">
+<option>CLOUD_MIGRATION</option>
+<option>SYSTEM_ARCHITECTURE</option>
+<option>PERFORMANCE_AUDIT</option>
+<option>FULL_STACK_DEPLOY</option>
+</select>
+</div>
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="font-mono font-bold uppercase text-xs">BUDGET_RANGE</label>
+<input class="brutal-border p-4 font-mono focus:bg-brutal-yellow focus:outline-none transition-colors" placeholder="ENTER RANGE (USD)" type="text">
+</div>
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="font-mono font-bold uppercase text-xs">PROJECT_DETAILS</label>
+<textarea class="brutal-border p-4 font-mono focus:bg-brutal-yellow focus:outline-none transition-colors resize-none" placeholder="DESCRIBE MISSION PARAMETERS" rows="4"></textarea>
+</div>
+<div class="md:col-span-2 mt-md">
+<button class="w-full md:w-fit px-xl py-md bg-brutal-yellow text-brutal-black brutal-border font-display font-black text-2xl uppercase hover:bg-brutal-black hover:text-brutal-yellow shadow-brutal hover:shadow-brutal-hover hover:translate-x-1 hover:translate-y-1 transition-all" type="submit">
+            SUBMIT PROPOSAL
+          </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-brutal-black text-brutal-white border-t-8 border-brutal-yellow mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center w-full p-lg mx-auto gap-md">
+<div class="font-display font-black text-4xl uppercase tracking-tighter mb-md md:mb-0">
+                DEV_ARCHITECT
+            </div>
+<nav class="flex flex-wrap justify-center items-center gap-md font-mono font-bold uppercase">
+<a class="px-4 py-2 bg-brutal-white text-brutal-black hover:bg-brutal-yellow transition-colors brutal-border border-brutal-white" href="#">[ LINKEDIN ]</a>
+<a class="px-4 py-2 bg-brutal-white text-brutal-black hover:bg-brutal-yellow transition-colors brutal-border border-brutal-white" href="#">[ GITHUB ]</a>
+<a class="px-4 py-2 bg-brutal-white text-brutal-black hover:bg-brutal-yellow transition-colors brutal-border border-brutal-white" href="#">[ SOURCE ]</a>
+</nav>
+<div class="font-mono text-sm uppercase bg-brutal-gray p-2 brutal-border border-brutal-white">
+                SYS.TIME: <script>document.write(new Date().getFullYear())</script>2026 // ALL RIGHTS SECURED.
+            </div>
+</div>
+</footer>
+<!-- Project Modal -->
+<div class="fixed inset-0 z-50 hidden bg-brutal-black/90 p-sm md:p-xl" id="project-modal">
+<div class="bg-brutal-white w-full h-full brutal-border border-brutal-white flex flex-col md:flex-row shadow-brutal-yellow relative" id="modal-content">
+<!-- Close Button -->
+<button aria-label="Close modal" class="absolute top-0 right-0 z-10 w-16 h-16 bg-brutal-yellow brutal-border-l brutal-border-b text-brutal-black hover:bg-brutal-black hover:text-brutal-yellow transition-colors flex items-center justify-center font-display font-black text-2xl" onclick="closeProjectModal()">
+X
+</button>
+<!-- Left: Image -->
+<div class="w-full md:w-2/3 h-1/2 md:h-full brutal-border-b md:brutal-border-b-0 md:brutal-border-r bg-brutal-gray relative p-sm md:p-md">
+<div class="w-full h-full border-4 border-brutal-black relative overflow-hidden bg-brutal-black p-2">
+<img alt="Project Detail" class="w-full h-full object-cover grayscale contrast-150" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOuEeq1XyvcTpN3J08VbVIJJzrVThm2ii9qAx4_F0Jbwc-JAKxkwEAos9Ymvd_SkzpfkElpxPI32GuXpdsZTpFo2BPOHpOEkO4KtdRqCOlY4637e4mcHDStm_zGkcjWhUvs2ZCwKAZq7OaZlC38tp-gDMEUyKB1-iGwRGcTqijg6YAzlg3sHE0Ysc6WlJc5-fBK230jomBuyx-CNbmYBLdLddLMb9SvYb3rXA996w0HXD0RwM3aVf_gaKOyq9YWG0NhagSRNX5iGo">
+</div>
+</div>
+<!-- Right: Info -->
+<div class="w-full md:w-1/3 h-1/2 md:h-full overflow-y-auto no-scrollbar bg-brutal-white flex flex-col">
+<div class="p-lg flex-grow flex flex-col gap-lg">
+<h2 class="font-display font-black text-5xl uppercase leading-none break-words" id="modal-title">FINTECH DATA NODE</h2>
+<div class="font-mono">
+<span class="block bg-brutal-black text-brutal-white px-2 py-1 text-xs font-bold uppercase w-fit mb-2">ROLE</span>
+<p class="text-xl font-bold uppercase border-l-4 border-brutal-yellow pl-4">LEAD ARCHITECT</p>
+</div>
+<div class="font-mono">
+<span class="block bg-brutal-black text-brutal-white px-2 py-1 text-xs font-bold uppercase w-fit mb-2">STACK</span>
+<div class="flex flex-wrap gap-2">
+<span class="border-2 border-brutal-black px-2 py-1 font-bold">NEXT.JS</span>
+<span class="border-2 border-brutal-black px-2 py-1 font-bold">TYPESCRIPT</span>
+<span class="border-2 border-brutal-black px-2 py-1 font-bold">TRPC</span>
+</div>
+</div>
+<div class="font-mono">
+<span class="block bg-brutal-black text-brutal-white px-2 py-1 text-xs font-bold uppercase w-fit mb-2">OBJECTIVE</span>
+<p class="text-base font-bold uppercase leading-tight bg-brutal-gray text-brutal-white p-4 brutal-border">
+                Destroy legacy monolith. Deploy high-velocity real-time data visualizer. Zero layout thrashing allowed.
+            </p>
+</div>
+<div class="font-mono">
+<span class="block bg-brutal-black text-brutal-white px-2 py-1 text-xs font-bold uppercase w-fit mb-2">OUTPUT</span>
+<ul class="space-y-2 text-sm font-bold uppercase">
+<li class="flex items-center gap-2"><span class="text-brutal-yellow text-xl">&gt;</span> +40% LOAD SPEED</li>
+<li class="flex items-center gap-2"><span class="text-brutal-yellow text-xl">&gt;</span> 99.9% UPTIME</li>
+<li class="flex items-center gap-2"><span class="text-brutal-yellow text-xl">&gt;</span> ZERO DOWNTIME MIGRATION</li>
+</ul>
+</div>
+</div>
+<div class="mt-auto brutal-border-t">
+<a class="flex items-center justify-center w-full p-lg bg-brutal-yellow text-brutal-black font-display font-black text-2xl uppercase hover:bg-brutal-black hover:text-brutal-yellow transition-colors group" href="#">
+            INITIALIZE DEPLOYMENT 
+            <span class="material-symbols-outlined ml-4 text-4xl group-hover:translate-x-2 transition-transform">rocket_launch</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+        // Simple Modal Logic
+        const modal = document.getElementById('project-modal');
+        const modalContent = document.getElementById('modal-content');
+
+        function openProjectModal(projectId) {
+            modal.classList.remove('hidden');
+        }
+
+        function closeProjectModal() {
+            modal.classList.add('hidden');
+        }
+
+        // Add tailwind marquee animation to config dynamically since it's not standard
+        tailwind.config.theme.extend.keyframes = {
+            marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-50%)' },
+            }
+        }
+</script>
+
+</body></html>

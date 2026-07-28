@@ -1,0 +1,45 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-07-21T00:00:00Z",
+  "libraries": {
+    "tailwindcss": {
+      "files": [
+        {
+          "filename": "theme-directive-custom-tokens.md",
+          "topic": "@theme directive — custom colors, fonts, shadows, spacing tokens; overriding defaults",
+          "tech_stack": "Tailwind CSS v4, CSS-first config",
+          "fetched": "2026-07-21T00:00:00Z",
+          "source": "Context7 API + tailwindcss.com/docs/theme"
+        },
+        {
+          "filename": "custom-animations-keyframes.md",
+          "topic": "Custom animations — --animate-* variables with @keyframes inside @theme (marquee example)",
+          "tech_stack": "Tailwind CSS v4, CSS-first config",
+          "fetched": "2026-07-21T00:00:00Z",
+          "source": "Context7 API + tailwindcss.com/docs/theme + /docs/animation"
+        },
+        {
+          "filename": "utility-directive.md",
+          "topic": "@utility directive — custom utilities (simple, complex, functional with --value())",
+          "tech_stack": "Tailwind CSS v4, CSS-first config",
+          "fetched": "2026-07-21T00:00:00Z",
+          "source": "Context7 API + tailwindcss.com/docs/adding-custom-styles"
+        },
+        {
+          "filename": "shadcn-ui-coexistence.md",
+          "topic": "shadcn/ui CSS variables (:root/.dark) coexisting with custom @theme tokens via @theme inline; next/font mapping",
+          "tech_stack": "Tailwind CSS v4, shadcn/ui, Next.js (next/font)",
+          "fetched": "2026-07-21T00:00:00Z",
+          "source": "ui.shadcn.com/docs/theming + tailwindcss.com/docs/theme"
+        },
+        {
+          "filename": "radius-and-border-width.md",
+          "topic": "Sharp corners (--radius: 0rem strategies) and border-width dynamic utilities in v4",
+          "tech_stack": "Tailwind CSS v4, shadcn/ui",
+          "fetched": "2026-07-21T00:00:00Z",
+          "source": "tailwindcss.com/docs/theme + /docs/border-width + ui.shadcn.com/docs/theming"
+        }
+      ]
+    }
+  }
+}

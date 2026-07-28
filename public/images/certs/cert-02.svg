@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Certification placeholder 02">
+  <rect width="800" height="600" fill="#c8c8c8"/>
+  <rect x="150" y="60" width="500" height="480" fill="#dedede" stroke="#262626" stroke-width="10"/>
+  <polygon points="400,120 520,190 520,330 400,400 280,330 280,190" fill="none" stroke="#404040" stroke-width="12"/>
+  <polygon points="400,180 465,217 465,303 400,340 335,303 335,217" fill="#595959"/>
+  <rect x="220" y="440" width="360" height="16" fill="#8a8a8a"/>
+  <rect x="270" y="480" width="260" height="16" fill="#8a8a8a"/>
+  <rect x="150" y="60" width="500" height="40" fill="#404040"/>
+</svg>

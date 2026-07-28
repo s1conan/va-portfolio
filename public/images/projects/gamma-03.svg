@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Project placeholder 03">
+  <defs>
+    <pattern id="cross" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M0 24L24 0M-6 6L6 -6M18 30L30 18" stroke="#a8a8a8" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="#d9d9d9"/>
+  <rect width="800" height="600" fill="url(#cross)"/>
+  <polygon points="640,80 740,280 540,280" fill="#404040"/>
+  <rect x="80" y="100" width="120" height="120" fill="#525252"/>
+  <rect x="220" y="100" width="120" height="120" fill="none" stroke="#262626" stroke-width="8"/>
+  <rect x="360" y="100" width="120" height="120" fill="#8a8a8a"/>
+  <rect x="80" y="250" width="400" height="20" fill="#595959"/>
+  <text x="60" y="540" font-family="monospace" font-size="140" font-weight="bold" fill="#262626">03</text>
+</svg>

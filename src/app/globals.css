@@ -65,6 +65,8 @@
   --animate-cursor: cursor-blink 1s steps(2, start) infinite;
   --animate-attract-idle: attract-idle 1.5s ease-in-out infinite;
   --animate-scroll-flow: scroll-flow 0.8s ease-in-out infinite;
+  --animate-fade-in: fade-in 0.2s ease-out forwards;
+  --animate-fade-out: fade-out 0.15s ease-in forwards;
 
   @keyframes marquee {
     from {
@@ -78,6 +80,24 @@
   @keyframes cursor-blink {
     to {
       visibility: hidden;
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
     }
   }
 
@@ -150,46 +170,32 @@
   -webkit-text-stroke: 2px #000000;
 }
 
-.pointy-corners {
+/* ─ Zoom Burst: element rushes toward the user on click ── */
+.zoom-burst {
   position: relative;
-  overflow: visible;
+  z-index: 1;
+  transform-origin: center center;
+  contain: layout style;
 }
 
-.pointy-corners::before,
-.pointy-corners::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  bottom: 5px;
-  left: 5px;
-  right: 5px;
-  border: 3px solid var(--color-brutal-black);
+.zoom-burst.zoom-burst-active {
+  animation: zoom-burst-out 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0s;
   pointer-events: none;
-  opacity: 0;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background: transparent !important;
+  z-index: 100;
+  will-change: transform, opacity;
 }
 
-.pointy-corners::before {
-  transform: translate(0, 0);
-}
-
-.pointy-corners::after {
-  transform: translate(0, 0);
-}
-
-.pointy-corners:hover::before,
-.pointy-corners:hover::after {
-  border-color: var(--color-brutal-yellow);
-}
-
-.pointy-corners.pointy-active::before {
-  opacity: 1;
-  transform: translate(-4px, -4px);
-}
-
-.pointy-corners.pointy-active::after {
-  opacity: 1;
-  transform: translate(4px, 4px);
+@keyframes zoom-burst-out {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(8);
+    opacity: 0;
+  }
 }
 
 :root {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback, startTransition } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { ArrowRight } from "lucide-react";
 
 import { ProjectCard } from "@/components/projects/project-card";
@@ -155,7 +155,7 @@ export function Projects() {
               priority={i < 3}
               onSelect={() => {
                 setIsScrolling(false);
-                startTransition(() => setSelectedProject(project));
+                setSelectedProject(project);
               }}
             />
           ))}
@@ -164,7 +164,7 @@ export function Projects() {
 
       <ProjectModal
         project={selectedProject}
-        onClose={() => startTransition(() => setSelectedProject(null))}
+        onClose={() => setSelectedProject(null)}
       />
     </section>
   );

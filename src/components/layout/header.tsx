@@ -11,7 +11,7 @@ export function Header() {
 
   const handleClick = (index: number) => {
     setClickedIndex(index);
-    setTimeout(() => setClickedIndex(null), 400);
+    setTimeout(() => setClickedIndex(null), 500);
   };
 
   return (
@@ -25,16 +25,16 @@ export function Header() {
         </a>
 
         {/* w-full keeps the border-segmented cells continuous across the header */}
-        <nav className="hidden md:flex md:justify-between w-full items-stretch bg-white">
+        <nav className="hidden md:flex md:justify-between w-full items-stretch bg-brutal-black text-brutal-white">
           {siteConfig.navLinks.map((link, index) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => handleClick(index)}
               className={cn(
-                "relative flex items-center justify-center font-mono text-sm font-bold uppercase px-4 py-4 transition-colors pointy-corners hover:bg-brutal-black hover:text-brutal-white min-w-[120px]",
+                "relative flex items-center justify-center font-mono text-sm font-bold uppercase px-4 py-4 transition-colors zoom-burst hover:text-brutal-yellow min-w-[120px]",
                 index < siteConfig.navLinks.length - 1 && "",
-                clickedIndex === index && "pointy-active",
+                clickedIndex === index && "zoom-burst-active",
               )}
             >
               {link.label}

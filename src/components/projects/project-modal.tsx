@@ -76,7 +76,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
     >
       <DialogContent
         showCloseButton={false}
-        className="fixed left-1/2 top-1/2 w-full max-w-7xl max-h-[85vh] -translate-x-1/2 -translate-y-1/2 grid-cols-1 max-md:grid-rows-2 gap-0 overflow-hidden rounded-none border-4 border-brutal-white bg-brutal-white p-0 ring-0 shadow-brutal-yellow sm:max-w-7xl md:grid-cols-3 md:grid-rows-1 data-open:zoom-in-100 data-closed:zoom-out-100"
+        className="fixed left-1/2 top-1/2 w-full max-w-7xl max-h-[85vh] -translate-x-1/2 -translate-y-1/2 grid-cols-1 max-md:grid-rows-2 gap-0 overflow-hidden rounded-none border-4 border-brutal-white bg-brutal-white p-0 ring-0 shadow-brutal-yellow sm:max-w-7xl md:grid-cols-3 md:grid-rows-1"
       >
         <DialogClose
           aria-label="Close modal"
